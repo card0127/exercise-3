@@ -84,57 +84,69 @@ html {
 /* line 21, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
 body {
   font-family: sans-serif;
+  color: #CC8B2C;
   margin: 0;
   padding: 0; }
-  /* line 26, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 27, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   body.noscript .close-btn {
     display: none; }
 
-/* line 32, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+/* line 33, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
 header {
   padding: 0 1em;
   position: relative; }
-  /* line 35, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 36, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   header .toggle-btn {
     position: absolute;
     right: 1em;
     top: 0; }
 
-/* line 42, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+/* line 43, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
 .navigation ul {
   margin: 0;
   padding: 0; }
-  /* line 44, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 45, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .navigation ul li {
     list-style-type: none; }
-    /* line 46, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+    /* line 47, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
     .navigation ul li a {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
       border-bottom: 1px solid #ccc;
       text-decoration: none; }
-    /* line 53, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+    /* line 54, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
     .navigation ul li:first-child a {
       border-top: 1px solid #ccc; }
 
 /* line 60, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+a {
+  color: #B59D7A;
+  text-decoration: none; }
+
+/* line 65, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+a:hover {
+  color: #CC8B2C;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* line 73, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
-  color: #fd7c00;
+  color: #CC8B2C;
   height: 40px;
   width: 40px; }
-  /* line 64, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 77, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .toggle-btn i, .close-btn i {
     border: 1px solid #ccc;
     padding: 0.5em; }
-  /* line 68, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 81, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
 
-/* line 73, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+/* line 86, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
 .close-btn {
   margin: 1em; }
 
@@ -142,13 +154,13 @@ header {
  * Sliding Navigation
  */
 @media only screen and (max-width: 50em) {
-  /* line 83, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 96, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 88, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+    /* line 101, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -157,16 +169,16 @@ header {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 96, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+    /* line 109, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
     .site-wrapper[data-state='slide-open'] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 100, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+    /* line 113, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
     .site-wrapper[data-state='slide-open'] {
       overflow: visible; }
 
-  /* line 107, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 120, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -179,30 +191,30 @@ header {
  }
 
 @media only screen and (min-width: 50em) {
-  /* line 123, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 136, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 126, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 139, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .slide-menu {
     position: static;
     right: auto;
     float: right;
     margin-top: -3rem; }
 
-  /* line 132, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 145, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   li {
     display: inline-block; }
 
-  /* line 135, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 148, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .navigation ul li a {
     border: none; }
 
-  /* line 139, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 152, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .navigation ul li:first-child a {
     border: none; }
 
-  /* line 143, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 156, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   header {
     padding: 1em;
     border-bottom: 1px solid #ccc; }

@@ -20,6 +20,7 @@ html {
 
 body{
   font-family: sans-serif;
+  color: $text-color;
   @include zero;
   // Hides close button if there is no js
   &.noscript{
@@ -55,6 +56,18 @@ header {
     }
   } // li
 } // .navigation ul
+
+a {
+    color: #B59D7A;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color: $text-color; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
 
 .toggle-btn, 
 .close-btn{
