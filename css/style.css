@@ -141,7 +141,7 @@ header {
 /**
  * Sliding Navigation
  */
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 50em) {
   /* line 83, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
@@ -178,7 +178,7 @@ header {
     min-height: 800px; }
  }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 50em) {
   /* line 123, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
@@ -187,21 +187,22 @@ header {
   .slide-menu {
     position: static;
     right: auto;
-    float: right; }
+    float: right;
+    margin-top: -3rem; }
 
-  /* line 131, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 132, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   li {
     display: inline-block; }
 
-  /* line 134, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 135, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .navigation ul li a {
     border: none; }
 
-  /* line 138, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 139, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   .navigation ul li:first-child a {
     border: none; }
 
-  /* line 142, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
+  /* line 143, /Users/pedrosantos/Dropbox/Graphic Design/Semestre 6/Web Development/exercise-3/scss/components/main */
   header {
     padding: 1em;
     border-bottom: 1px solid #ccc; }

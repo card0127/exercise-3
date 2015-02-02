@@ -79,7 +79,7 @@ header {
 
 // Page should move when nav opens
 // only time we will ever use max-width
-@media only screen and (max-width: 60em){ 
+@media only screen and (max-width: 50em){ 
   .site-wrapper{
     position: relative;
     overflow: hidden;
@@ -118,7 +118,7 @@ header {
 }
 
 // Resets page when desktop, even if nav is toggled open
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 50em) {
   .toggle-btn, 
   .close-btn{
     display: none;
@@ -127,6 +127,7 @@ header {
      position: static;
      right: auto;
 	 float:right;
+	 margin-top: -3rem;
   }
   li{
     display: inline-block;
