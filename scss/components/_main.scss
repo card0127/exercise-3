@@ -143,6 +143,15 @@ a:hover
 
 // Resets page when desktop, even if nav is toggled open
 @media only screen and (min-width: 50em) {
+  .navigation ul{
+  li{
+    a{
+	  background-color: $white;
+    }
+  } // li
+} // .navigation ul
+  
+  
   a{
 	  font-size: 1.5rem;
   }
