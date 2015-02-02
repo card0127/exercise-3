@@ -66,6 +66,7 @@ a {
     color: #B59D7A;
     text-decoration: none;
 	font-size: 1.15rem;
+	@include ease(all, 700ms, ease-in-out);
 }
 
 a:hover 
@@ -73,6 +74,7 @@ a:hover
      color: $hover-color; 
      text-decoration:none; 
      cursor:pointer;  
+	 @include ease(all, 700ms, ease-in-out);
 }
 
 .toggle-btn, 
