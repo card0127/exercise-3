@@ -126,5 +126,21 @@ header {
   .slide-menu{
      position: static;
      right: auto;
+	 float:right;
+  }
+  li{
+    display: inline-block;
+  }
+  .navigation ul li a {
+    border: none;
+  }
+
+  .navigation ul li:first-child a {
+    border: none;
+  }
+
+  header {
+    padding: 1em;
+    border-bottom: 1px solid $light-grey;
   }
 }
