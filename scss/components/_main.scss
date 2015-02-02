@@ -19,7 +19,7 @@ html {
 
 
 body{
-  font-family: sans-serif;
+  font-family: $amatic;
   color: $text-color;
   @include zero;
   // Hides close button if there is no js
@@ -39,6 +39,11 @@ header {
     top: 0;
   }
 }
+
+h1{
+	font-family: $sketch;
+}
+
 
 .navigation ul{
   @include zero;
@@ -60,22 +65,25 @@ header {
 a {
     color: #B59D7A;
     text-decoration: none;
+	font-size: 1.15rem;
 }
 
 a:hover 
 {
-     color: $text-color; 
+     color: $hover-color; 
      text-decoration:none; 
      cursor:pointer;  
 }
 
 .toggle-btn, 
 .close-btn{
+	margin-top:0.5rem;
   color: $text-color;
   height: 40px;
   width: 40px; 
   i{
-    border: 1px solid $light-grey;
+    border: 1px solid $border-color;
+	border-radius: 25px;
     padding: .5em; 
   }
   span{
@@ -84,7 +92,7 @@ a:hover
 }
 
 .close-btn{
-  margin: 1em;
+  margin-left: 0.5rem;
 }
 /**
  * Sliding Navigation
@@ -132,6 +140,10 @@ a:hover
 
 // Resets page when desktop, even if nav is toggled open
 @media only screen and (min-width: 50em) {
+  a{
+	  font-size: 1.5rem;
+  }
+  
   .toggle-btn, 
   .close-btn{
     display: none;
@@ -140,7 +152,7 @@ a:hover
      position: static;
      right: auto;
 	 float:right;
-	 margin-top: -3rem;
+	 margin-top: -4rem;
   }
   li{
     display: inline-block;
